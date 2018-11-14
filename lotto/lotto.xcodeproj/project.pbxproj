@@ -15,6 +15,7 @@
 		68332C6C219BB82D00854882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68332C6A219BB82D00854882 /* LaunchScreen.storyboard */; };
 		68332C77219BB82D00854882 /* lottoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68332C76219BB82D00854882 /* lottoTests.swift */; };
 		68332C82219BB82D00854882 /* lottoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68332C81219BB82D00854882 /* lottoUITests.swift */; };
+		68332CB6219BE4C500854882 /* LottoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68332CB5219BE4C500854882 /* LottoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		68332C7D219BB82D00854882 /* lottoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lottoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68332C81219BB82D00854882 /* lottoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottoUITests.swift; sourceTree = "<group>"; };
 		68332C83219BB82D00854882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68332CB5219BE4C500854882 /* LottoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				68332C5E219BB82C00854882 /* AppDelegate.swift */,
 				68332C60219BB82C00854882 /* ViewController.swift */,
 				68332C62219BB82C00854882 /* Main.storyboard */,
+				68332CB5219BE4C500854882 /* LottoCell.swift */,
 				68332C68219BB82D00854882 /* Assets.xcassets */,
 				68332C6A219BB82D00854882 /* LaunchScreen.storyboard */,
 				68332C6D219BB82D00854882 /* Info.plist */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68332CB6219BE4C500854882 /* LottoCell.swift in Sources */,
 				68332C67219BB82C00854882 /* lotto.xcdatamodeld in Sources */,
 				68332C61219BB82C00854882 /* ViewController.swift in Sources */,
 				68332C5F219BB82C00854882 /* AppDelegate.swift in Sources */,
