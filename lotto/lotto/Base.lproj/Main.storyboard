@@ -21,9 +21,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cS3-8p-e0k">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Load" id="AfX-ZV-NkU"/>
+                                    <barButtonItem title="Load" id="AfX-ZV-NkU">
+                                        <connections>
+                                            <action selector="doLoad:" destination="BYZ-38-t0r" id="4c7-hV-wSG"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ck2-FB-Aiw"/>
-                                    <barButtonItem title="Save" id="uw5-Bo-b3q"/>
+                                    <barButtonItem title="Save" id="uw5-Bo-b3q">
+                                        <connections>
+                                            <action selector="doSave:" destination="BYZ-38-t0r" id="qJB-IZ-iZe"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="pfI-oU-sQi"/>
                                     <barButtonItem title="Draw" id="eib-va-K5D">
                                         <connections>

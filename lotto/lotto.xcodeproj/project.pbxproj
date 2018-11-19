@@ -16,6 +16,12 @@
 		68332C77219BB82D00854882 /* lottoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68332C76219BB82D00854882 /* lottoTests.swift */; };
 		68332C82219BB82D00854882 /* lottoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68332C81219BB82D00854882 /* lottoUITests.swift */; };
 		68332CB6219BE4C500854882 /* LottoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68332CB5219BE4C500854882 /* LottoCell.swift */; };
+		68622E08219C2F50009ED437 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 68622E00219C2F50009ED437 /* FMDatabase.m */; };
+		68622E09219C2F50009ED437 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 68622E03219C2F50009ED437 /* FMDatabaseAdditions.m */; };
+		68622E0A219C2F50009ED437 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 68622E05219C2F50009ED437 /* FMDatabaseQueue.m */; };
+		68622E0B219C2F50009ED437 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 68622E06219C2F50009ED437 /* FMResultSet.m */; };
+		68622E0C219C2F50009ED437 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 68622E07219C2F50009ED437 /* FMDatabasePool.m */; };
+		6889E7FE219D17380066C861 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6889E7FD219D17380066C861 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,19 @@
 		68332C81219BB82D00854882 /* lottoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottoUITests.swift; sourceTree = "<group>"; };
 		68332C83219BB82D00854882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68332CB5219BE4C500854882 /* LottoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoCell.swift; sourceTree = "<group>"; };
+		68622DFC219C2F4E009ED437 /* lotto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lotto-Bridging-Header.h"; sourceTree = "<group>"; };
+		68622DFD219C2F4F009ED437 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		68622DFE219C2F4F009ED437 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		68622DFF219C2F50009ED437 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		68622E00219C2F50009ED437 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		68622E01219C2F50009ED437 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		68622E02219C2F50009ED437 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		68622E03219C2F50009ED437 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		68622E04219C2F50009ED437 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		68622E05219C2F50009ED437 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		68622E06219C2F50009ED437 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		68622E07219C2F50009ED437 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		6889E7FD219D17380066C861 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6889E7FE219D17380066C861 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +105,7 @@
 				68332C75219BB82D00854882 /* lottoTests */,
 				68332C80219BB82D00854882 /* lottoUITests */,
 				68332C5C219BB82C00854882 /* Products */,
+				6889E7FC219D17380066C861 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +123,17 @@
 			isa = PBXGroup;
 			children = (
 				68332C5E219BB82C00854882 /* AppDelegate.swift */,
+				68622E01219C2F50009ED437 /* FMDatabase.h */,
+				68622E00219C2F50009ED437 /* FMDatabase.m */,
+				68622DFE219C2F4F009ED437 /* FMDatabaseAdditions.h */,
+				68622E03219C2F50009ED437 /* FMDatabaseAdditions.m */,
+				68622DFD219C2F4F009ED437 /* FMDatabasePool.h */,
+				68622E07219C2F50009ED437 /* FMDatabasePool.m */,
+				68622E04219C2F50009ED437 /* FMDatabaseQueue.h */,
+				68622E05219C2F50009ED437 /* FMDatabaseQueue.m */,
+				68622E02219C2F50009ED437 /* FMDB.h */,
+				68622DFF219C2F50009ED437 /* FMResultSet.h */,
+				68622E06219C2F50009ED437 /* FMResultSet.m */,
 				68332C60219BB82C00854882 /* ViewController.swift */,
 				68332C62219BB82C00854882 /* Main.storyboard */,
 				68332CB5219BE4C500854882 /* LottoCell.swift */,
@@ -109,6 +141,7 @@
 				68332C6A219BB82D00854882 /* LaunchScreen.storyboard */,
 				68332C6D219BB82D00854882 /* Info.plist */,
 				68332C65219BB82C00854882 /* lotto.xcdatamodeld */,
+				68622DFC219C2F4E009ED437 /* lotto-Bridging-Header.h */,
 			);
 			path = lotto;
 			sourceTree = "<group>";
@@ -129,6 +162,14 @@
 				68332C83219BB82D00854882 /* Info.plist */,
 			);
 			path = lottoUITests;
+			sourceTree = "<group>";
+		};
+		6889E7FC219D17380066C861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6889E7FD219D17380066C861 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +240,7 @@
 				TargetAttributes = {
 					68332C5A219BB82C00854882 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					68332C71219BB82D00854882 = {
 						CreatedOnToolsVersion = 10.1;
@@ -265,7 +307,12 @@
 				68332CB6219BE4C500854882 /* LottoCell.swift in Sources */,
 				68332C67219BB82C00854882 /* lotto.xcdatamodeld in Sources */,
 				68332C61219BB82C00854882 /* ViewController.swift in Sources */,
+				68622E0A219C2F50009ED437 /* FMDatabaseQueue.m in Sources */,
+				68622E0C219C2F50009ED437 /* FMDatabasePool.m in Sources */,
+				68622E08219C2F50009ED437 /* FMDatabase.m in Sources */,
 				68332C5F219BB82C00854882 /* AppDelegate.swift in Sources */,
+				68622E0B219C2F50009ED437 /* FMResultSet.m in Sources */,
+				68622E09219C2F50009ED437 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = lotto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,6 +496,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woopa.lotto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lotto/lotto-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = lotto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,6 +516,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.woopa.lotto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lotto/lotto-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
